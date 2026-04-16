@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=960, initial-scale=1.0, shrink-to-fit=yes, height=device-height">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kulumba Nelson Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- ══ FAVICON (inline SVG → data URI) ══ -->
+  <link rel="icon" type="image/svg+xml" href="nelly.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 </head>
 <body>
-
 <div class="container">
 
   <!-- Header -->
@@ -27,19 +33,15 @@
 
   <!-- Sections -->
   <div class="sections">
-
-    <!-- Education -->
     <div class="section">
       <h3>Education Background</h3>
       <ol>
         <li>Kyambogo University (2024 to date)</li>
-        <li>Merryland High School Entebbe (2017 to 2020) from s1 to s4</li>
-        <li>Merryland High School Entebbe (2022 to 2023) from s5 to s6</li>
-        <li>Blessed Valley Primary School (2008 to 2016)</li>
+        <li>Merryland High School Entebbe (2017–2020) S1 to S4</li>
+        <li>Merryland High School Entebbe (2022–2023) S5 to S6</li>
+        <li>Blessed Valley Primary School (2008–2016)</li>
       </ol>
     </div>
-
-    <!-- Skills -->
     <div class="section">
       <h3>Skills &amp; Hobbies</h3>
       <ul>
@@ -47,94 +49,159 @@
         <li>Software Development</li>
         <li>Database Management</li>
         <li>Web Development</li>
-        <li>Motion graphics</li>
+        <li>Motion Graphics</li>
       </ul>
     </div>
-
   </div>
 
-  <!-- Table Section -->
+  <!-- Table -->
   <div class="table-section">
     <h3>Projects / Experience</h3>
     <table>
+      <tr><th>Year</th><th>Project</th><th>Description</th></tr>
       <tr>
-        <th>Year</th>
-        <th>Project</th>
-        <th>Description</th>
+        <td>2024</td><td>Personal Portfolio Website</td>
+        <td>Designed and built a responsive personal portfolio website using HTML, CSS, and JavaScript</td>
       </tr>
       <tr>
-        <td>2024</td>
-        <td>Portfolio Website</td>
-        <td>Designed and developed a personal portfolio website</td>
+        <td>2024</td><td>Simple Calculator App</td>
+        <td>Developed a browser-based calculator with basic arithmetic operations using HTML, CSS, and JavaScript</td>
       </tr>
       <tr>
-        <td>2025</td>
-        <td>Database System</td>
-        <td>Created a student management database system</td>
+        <td>2024</td><td>Student Grade Tracker</td>
+        <td>Built a Python console app that takes student marks as input and computes averages and letter grades</td>
       </tr>
       <tr>
-        <td>2026</td>
-        <td>Jericho High School Portal</td>
-        <td>Created a full stack website for Jericho High School Namasuba</td>
+        <td>2025</td><td>To-Do List Web App</td>
+        <td>Created a task management web app with add, delete, and mark-complete features using vanilla JavaScript</td>
+      </tr>
+      <tr>
+        <td>2025</td><td>Student Registration Form</td>
+        <td>Designed a validated HTML/CSS registration form with JavaScript input checks and local storage saving</td>
+      </tr>
+      <tr>
+        <td>2025</td><td>Library Book Catalogue</td>
+        <td>Built a simple database-backed catalogue using MySQL to store, search, and list library books</td>
+      </tr>
+      <tr>
+        <td>2025</td><td>Weather Info Page</td>
+        <td>Created a webpage that fetches and displays current weather data from a free public API using JavaScript</td>
+      </tr>
+      <tr>
+        <td>2026</td><td>Jericho High School Portal</td>
+        <td>Developed a school website for Jericho High School Namasuba with a notice board and contact form</td>
+      </tr>
+      <tr>
+        <td>2026</td><td>Quiz Application</td>
+        <td>Programmed a multiple-choice quiz app in Python that tracks scores and shows results at the end</td>
+      </tr>
+      <tr>
+        <td>2026</td><td>Expense Tracker</td>
+        <td>Built a simple web-based expense tracker that lets users log daily spending and view a running total</td>
       </tr>
     </table>
   </div>
 
-  <!-- Contact Section -->
-  <div class="contact-grid">
+  <!-- Contact -->
+  <section class="contact">
+    <div class="contact-wrapper">
 
-  <a href="tel:+256756961702" style="text-decoration:none;">
-    <div class="contact-item">
-      <div class="contact-icon icon-phone">
-        <i class="fas fa-phone"></i>
+      <div class="contact-info">
+        <h2><i class="fa-solid fa-address-card"></i> Contact Info</h2>
+
+        <a class="info-item" href="tel:+256756961702">
+          <span class="icon-bubble phone"><i class="fa-solid fa-phone"></i></span>
+          <div class="info-text">
+            <span class="info-label">Telephone</span>
+            <span>+256 756 961 702</span>
+          </div>
+        </a>
+
+        <a class="info-item" href="mailto:kulumbanelson1111@gmail.com">
+          <span class="icon-bubble email"><i class="fa-solid fa-envelope"></i></span>
+          <div class="info-text">
+            <span class="info-label">Email</span>
+            <span>kulumbanelson1111@gmail.com</span>
+          </div>
+        </a>
+
+        <div class="info-item">
+          <span class="icon-bubble location"><i class="fa-solid fa-location-dot"></i></span>
+          <div class="info-text">
+            <span class="info-label">Location</span>
+            <span>Namasuba, Kikajjo — Uganda</span>
+          </div>
+        </div>
+
+        <a class="info-item" href="https://www.linkedin.com/in/kulumba-nelson-b03909198/" target="_blank">
+          <span class="icon-bubble linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
+          <div class="info-text">
+            <span class="info-label">LinkedIn</span>
+            <span>kulumba-nelson</span>
+          </div>
+        </a>
+
+        <a class="info-item" href="https://github.com/Kulumbanelson12345/PORTFOLIO" target="_blank">
+          <span class="icon-bubble github"><i class="fa-brands fa-github"></i></span>
+          <div class="info-text">
+            <span class="info-label">GitHub</span>
+            <span>Kulumbanelson12345</span>
+          </div>
+        </a>
+
+        <a class="info-item" href="https://wa.me/256775070929" target="_blank">
+          <span class="icon-bubble whatsapp"><i class="fa-brands fa-whatsapp"></i></span>
+          <div class="info-text">
+            <span class="info-label">WhatsApp</span>
+            <span>+256 775 070 929</span>
+          </div>
+        </a>
       </div>
-      <div class="contact-text">
-        <strong>Telephone</strong>
-        <span>0756 961 702</span>
-      </div>
+
+      <form class="contact-form" id="contact-form">
+        <h2><i class="fa-solid fa-paper-plane"></i> Send Message</h2>
+
+        <div class="input-group">
+          <input type="text" name="user_name" placeholder=" " required>
+          <i class="fa-solid fa-user input-icon"></i>
+          <label>Your Name</label>
+        </div>
+
+        <div class="input-group">
+          <input type="email" name="user_email" placeholder=" " required>
+          <i class="fa-solid fa-envelope input-icon"></i>
+          <label>Your Email</label>
+        </div>
+
+        <div class="input-group full">
+          <textarea name="message" rows="5" placeholder=" " required></textarea>
+          <i class="fa-solid fa-comment input-icon top"></i>
+          <label>Your Message</label>
+        </div>
+
+        <button type="submit">Send Message &nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+        <p class="success" id="success-msg">✅ Message sent successfully!</p>
+      </form>
+
     </div>
-  </a>
-
-  <a href="mailto:kulumbanelson1111@gmail.com" style="text-decoration:none;">
-    <div class="contact-item">
-      <div class="contact-icon icon-email">
-        <i class="fas fa-envelope"></i>
-      </div>
-      <div class="contact-text">
-        <strong>Email</strong>
-        <span>kulumbanelson1111@gmail.com</span>
-      </div>
-    </div>
-  </a>
-
-  <a href="https://wa.me/256756961702" target="_blank" style="text-decoration:none;">
-    <div class="contact-item">
-      <div class="contact-icon icon-whatsapp">
-        <i class="fab fa-whatsapp"></i>
-      </div>
-      <div class="contact-text">
-        <strong>WhatsApp</strong>
-        <span>0756 961 702</span>
-      </div>
-    </div>
-  </a>
-
-  <a href="https://maps.google.com/?q=Namasuba+Kikajjo+Uganda" target="_blank" style="text-decoration:none;">
-    <div class="contact-item">
-      <div class="contact-icon icon-location">
-        <i class="fas fa-map-marker-alt"></i>
-      </div>
-      <div class="contact-text">
-        <strong>Location</strong>
-        <span>Namasuba- Kikajjo</span>
-      </div>
-    </div>
-  </a>
-
-</div>
+  </section>
 
   <div class="footer">&copy; 2026 Kulumba Nelson &mdash; All Rights Reserved</div>
 
 </div>
+
+<script>
+(function(){ emailjs.init("YOUR_PUBLIC_KEY"); })();
+document.getElementById("contact-form").addEventListener("submit", function(e){
+  e.preventDefault();
+  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+  .then(() => {
+    document.getElementById("success-msg").style.display = "block";
+  }, () => {
+    alert("Failed to send. Please try again.");
+  });
+});
+</script>
+
 </body>
 </html>
