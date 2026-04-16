@@ -1,9 +1,10 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-body {
+html, body {
   font-family: 'DM Sans', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  min-height: 100vh;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
@@ -11,10 +12,8 @@ body {
 .container {
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  background: #ffffff;
+  min-height: 100vh;
   border-radius: 0;
-  overflow: hidden;
   box-shadow: none;
 }
     /* ── HEADER ── */
@@ -228,4 +227,4 @@ td {
   margin-top: auto;
 }
 
- 
+  
