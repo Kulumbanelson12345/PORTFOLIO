@@ -287,4 +287,19 @@ td {
     grid-template-columns: 1fr;
   }
 
+@media (max-width: 600px) {
+
+  body {
+    padding: 30px 15px;
+  }
+
+  .container {
+    width: 92%;
+    min-width: 900px;
+  }
+
+  html {
+    overflow-x: scroll;
+  }
+
 }
